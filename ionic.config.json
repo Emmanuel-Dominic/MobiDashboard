@@ -1,0 +1,7 @@
+{
+  "name": "MobiDashboard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
