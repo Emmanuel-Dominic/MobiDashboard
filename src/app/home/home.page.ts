@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+interface InfiniteScrollEvent {
+  target: {
+    complete: () => void;
+  };
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -9,6 +15,16 @@ export class HomePage {
   studentList = students;
   constructor() {}
 
+  loadMoreOnScroll(event: InfiniteScrollEvent) {
+    setTimeout(() => {
+      let newStudents = [...this.studentList];
+      newStudents.reverse();
+
+      this.studentList = this.studentList.concat(newStudents);
+
+      event.target.complete();
+    }, 3000);
+  }
 }
 
 const students = [
