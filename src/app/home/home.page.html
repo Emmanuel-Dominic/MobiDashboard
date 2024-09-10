@@ -7,6 +7,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="loadMoreOnRefresh($event)">
+    <ion-refresher-content 
+    pullingSpinner="bubbles"
+    refreshingText="Loading more data...">
+
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <ion-item *ngFor="let student of studentList">
+      <ion-label>{{ student.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!--
+<ion-content [fullscreen]="true">
     <ion-list>
       <ion-item *ngFor="let student of studentList">
         <ion-label>{{ student.name }}</ion-label>
@@ -21,6 +38,7 @@
       </ion-infinite-scroll-content>
     </ion-infinite-scroll>
 </ion-content>
+-->
 
 <!--
 <ion-content [fullscreen]="true">

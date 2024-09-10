@@ -25,6 +25,14 @@ export class HomePage {
       event.target.complete();
     }, 3000);
   }
+
+  loadMoreOnRefresh(event: InfiniteScrollEvent) {
+    setTimeout(() => {
+      let newStudents = this.studentList.slice(4,8);
+      this.studentList.unshift(newStudents[0], newStudents[1], newStudents[2], newStudents[3]);
+      event.target.complete();
+    }, 3000);
+  }
 }
 
 const students = [
