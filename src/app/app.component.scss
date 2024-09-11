@@ -117,3 +117,70 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+.notifications-list {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.notifications-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notifications-note {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-avatar {
+  margin-right: 16px;
+}
+
+.notification-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification-label {
+  font-size: 16px;
+}
+
+.notification-item .message {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.notification-label p {
+  font-size: 14px;
+  color: #666;
+}
+
+.notification-item:not(.unread) .message {
+  color: #666;
+}
+
+.notification-item.unread .message {
+  color: #000;
+}

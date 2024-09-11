@@ -1,0 +1,18 @@
+<div class="popover-notification">
+  <ion-list class="notifications-list">
+    <ion-list-header class="notifications-header">
+      Notifications
+    </ion-list-header>
+    <ion-note class="notifications-note">Keep updated!</ion-note>
+
+    <ion-item class="notification-item" *ngFor="let notification of notifications" (click)="closePopover()" [class.unread]="notification.unread">
+      <ion-avatar slot="start" class="notification-avatar">
+        <img [src]="notification.userImage" alt="User Image" />
+      </ion-avatar>
+      <ion-label class="notification-label">
+        <h2 class="message">{{ notification.message }}</h2>
+        <p>{{ notification.timestamp | date: 'short' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</div>
