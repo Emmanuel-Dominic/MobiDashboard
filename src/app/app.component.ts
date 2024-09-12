@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   isMobileView: boolean = false;
   public appPages = [
     { title: 'Time & Date', url: '/date', icon: 'calendar-outline' },
+    { title: 'Segment', url: '/segment', icon: 'layers' },
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },

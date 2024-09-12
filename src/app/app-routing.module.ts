@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'date',
     loadChildren: () => import('./date/date.module').then( m => m.DatePageModule)
+  },
+  {
+    path: 'segment',
+    loadChildren: () => import('./segment/segment.module').then( m => m.SegmentPageModule)
   }
 ];
 

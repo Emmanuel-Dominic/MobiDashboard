@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment value="segment1" color="primary" (ionChange)="onSegmentChange($event)">
+    <ion-segment-button value="segment1">
+      <ion-label>Segment One</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="segment2">
+      <ion-label>Segment Two</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-card *ngIf="selectedSegment === 'segment1'">
+    <ion-card-header>
+      <ion-card-title>Segment One Content Header</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card *ngIf="selectedSegment === 'segment2'">
+    <ion-card-header>
+      <ion-card-title>Segment Two Content Header</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
