@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Date</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openNotifications($event)">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Simple Date Time</ion-label>
+    <ion-datetime></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Simple Time Example</ion-label>
+    <ion-datetime displayFormat="HH:mm"></ion-datetime>
+  </ion-item>
+</ion-content>
+
+<!--
+<base-page title="Date">
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Simple Date Time</ion-label>
+        <ion-datetime></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>Simple Time Example</ion-label>
+        <ion-datetime displayFormat="HH:mm"></ion-datetime>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</base-page>
+-->
