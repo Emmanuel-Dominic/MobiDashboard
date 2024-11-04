@@ -1,1 +1,3 @@
 # MobiDashboard
+
+The MobiDashboard application is a dynamic Ionic and Capacitor-based project optimized for Appflow builds, featuring essential user interaction capabilities for an intuitive experience. Key features include pull-to-refresh, infinite scroll, and sliding lists, enhancing content accessibility and user flow. The app leverages the ion-segment component for seamless content switching and a BasePageComponent for reusable page structures, ensuring a consistent design. Popover notifications provide real-time updates, while a detailed student list offers organized data management. This robust setup, structured with modern UI components, delivers a mobile-first, user-friendly dashboard experience.
